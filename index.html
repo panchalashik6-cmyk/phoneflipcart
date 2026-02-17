@@ -1,0 +1,1612 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flipkart Header</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color:rgb(226, 226, 237)
+      }
+
+      .top-header {
+        background: rgb(133, 150, 228);
+        box-shadow: 2px  rgba(0, 0, 0, 0.75);
+        padding: 8px 0;
+        color: white;
+        position: sticky;
+        top: 0;
+      }
+
+      .logo img {
+        width: 140px;
+      }
+
+      .search-box {
+        width: 45%;
+      }
+
+      .search-box input {
+        border-radius: 2px 2px 2px 2px;
+      }
+
+      .search-btn {
+        background: white;
+        border: none;
+      }
+
+      li{
+        list-style: none;
+      }
+      
+
+      #jack p{
+        text-align:justify;
+      }
+
+      footer {
+      background: #172337;
+      color: #fff;
+      padding: 40px 60px 20px;
+    }
+
+    .footer-top {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 30px;
+      border-bottom: 1px solid #454d5e;
+      padding-bottom: 30px;
+    }
+
+    .footer-column h4 {
+      color: #878787;
+      font-size: 12px;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
+
+    .footer-column a {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
+
+    .footer-column a:hover {
+      text-decoration: underline;
+    }
+
+    .address {
+      font-size: 12px;
+      line-height: 1.6;
+      color: #fff;
+    }
+
+    .social-icons {
+      margin-top: 10px;
+      display: flex;
+      gap: 12px;
+    }
+
+    .social-icons span {
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 15px;
+      font-size: 12px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .footer-bottom .left,
+    .footer-bottom .right {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .footer-bottom a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .footer-bottom a:hover {
+      text-decoration: underline;
+    }
+
+  
+
+    .refresh-btn {
+      background: #2874f0;
+      border: none;
+      padding: 10px 18px;
+      color: white;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 13px;
+    }
+
+    .refresh-btn:hover {
+      background: #1f5fc7;
+    }
+
+      .footer-top {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    
+      @media (max-width:768px){
+
+#app, #bag, #ashik, #mouse{
+  flex-direction:column !important;
+}
+
+#app > div,
+#bag > div,
+#ashik > div,
+#mouse > div{
+  width:100% !important;
+}
+
+.product{
+  flex-direction:column !important;
+}
+
+#nav-product{
+  flex-wrap:wrap !important;
+}
+
+}
+
+/* universal responsive fix */
+*{
+  box-sizing:border-box;
+}
+
+img{
+  max-width:100% !important;
+  height:auto !important;
+}
+
+/* all flex section wrap */
+#nav-product,
+.product-1,
+#pc,#pc2,#dc,#dc2,#dc3,
+#bol1,#bol2,
+#AC,#AC1,#AC2,
+#pro-1,#perfect-1,#pen-1,#set-1,#pet-1{
+  display:flex;
+  flex-wrap:wrap !important;
+  justify-content:center;
+  gap:20px;
+}
+
+/* mobile view */
+@media(max-width:768px){
+
+/* header */
+.top-header .d-flex{
+  flex-direction:column !important;
+  gap:10px;
+  text-align:center;
+}
+
+.search-box{
+  width:100% !important;
+}
+
+/* all 3 column section */
+#app,#bag,#ashik,#mouse{
+  flex-direction:column !important;
+  padding:10px;
+}
+
+#app>div,
+#bag>div,
+#ashik>div,
+#mouse>div{
+  width:100% !important;
+}
+
+/* top deal section */
+.product{
+  flex-direction:column !important;
+}
+
+#poster{
+  width:100% !important;
+}
+
+/* slider */
+.slider img{
+  height:auto !important;
+}
+
+/* footer */
+.footer-top{
+  grid-template-columns:1fr !important;
+  text-align:center;
+}
+
+.footer-bottom{
+  flex-direction:column;
+  text-align:center;
+}
+
+}
+
+/* ======= PRODUCT CARD RESPONSIVE FIX ======= */
+#nav-product div,
+.product-1 div,
+#pc div,#pc2 div,#dc div,#dc2 div,#dc3 div,
+#bol1 div,#bol2 div,#AC div,#AC1 div,#AC2 div,
+#pro-1 div,#perfect-1 div,#pen-1 div,#set-1 div,#pet-1 div{
+  width:180px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+#nav-product div,
+.product-1 div,
+#pc div,#pc2 div,#dc div,#dc2 div,#dc3 div,
+#bol1 div,#bol2 div,#AC div,#AC1 div,#AC2 div,
+#pro-1 div,#perfect-1 div,#pen-1 div,#set-1 div,#pet-1 div{
+  width:45% !important;
+}
+
+}
+
+/* SMALL MOBILE */
+@media(max-width:480px){
+
+#nav-product div,
+.product-1 div,
+#pc div,#pc2 div,#dc div,#dc2 div,#dc3 div,
+#bol1 div,#bol2 div,#AC div,#AC1 div,#AC2 div,
+#pro-1 div,#perfect-1 div,#pen-1 div,#set-1 div,#pet-1 div{
+  width:100% !important;
+}
+
+}
+
+
+
+    </style>
+  </head>
+
+  <body>
+    <div class="top-header">
+      <div class="container-fluid">
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="logo">
+            <img
+              src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-11f9e2.svg"
+            />
+          </div>
+
+          <div class="search-box">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search for Products, Brands and More"
+              />
+              <button class="btn search-btn">
+                <i class="fa fa-search text-primary"></i>
+              </button>
+            </div>
+          </div>
+
+         <div class="d-flex align-items-center gap-4 text-white">
+
+  <div class="dropdown">
+    <span class="dropdown-toggle" data-bs-toggle="dropdown" style="cursor:pointer;">
+      <i class="fa fa-user"></i> Login
+    </span>
+
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">My Profile</a></li>
+      <li><a class="dropdown-item" href="#">Orders</a></li>
+      <li><a class="dropdown-item" href="#">Wishlist</a></li>
+      <li><a class="dropdown-item" href="#">Logout</a></li>
+    </ul>
+  </div>
+
+  <span><i class="fa fa-store"></i> Become a Seller</span>
+  <span><i class="fa fa-cart-shopping"></i> Cart</span>
+
+</div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div id="nav-product" style="display: flex;justify-content: center;gap: 55px;text-align: center; border: 2px solid white; background-color: white; margin-top: 20px; width: 98%; margin-left:15px;"></div>
+
+    <div class="slider"></div>
+    
+    <div class="product" style="height: auto; background-color: white; margin-top:10px;display: flex; justify-content: center;">
+     <div style="width: 100%; padding-top: 10px;margin-left: 10px;"><h4>Top Deals</h4>
+      <div class="product-1" style="width: 100%;text-align: center; display: flex;
+        justify-content: center;
+        gap: 60px;
+        padding: 40px;"></div></div>
+      <div id="poster" style="width: 100%;"></div>
+    </div>
+
+
+    <div id="app" style="box-shadow: 0 4px 8px rgba(0,0,0,0.1);height: auto; width: 100%;display: flex;padding: 20px;gap: 30px;background-color: white; margin-top: 20px;">
+      <div id="app-1" style="width: 100%;box-shadow: 0 4px 8px rgba(0,0,0,0.5);">
+        <h4 style="margin-top: 20px;margin-left: 30px;">Top Deals</h4>
+        <div id="pc" style="display: flex;flex-wrap: wrap;text-align: center;"></div>
+
+      </div>
+      <div id="app-2" style="width: 100%; box-shadow: 0 4px 8px rgba(0,0,0,0.5);">
+        <h4 style="margin-top: 20px; margin-left: 30px;">Fasion Top Deals</h4>
+        <div id="pc2" style="display: flex;flex-wrap: wrap;text-align: center;"></div>
+      </div>
+       <div style="width: 100%; box-shadow: 0 4px 8px rgba(0,0,0,0.5); ">
+      <div id="app-3" style="width: 100%;"></div></div>
+    </div>
+    
+    <div id="bag" style="box-shadow: 0 4px 8px rgba(0,0,0,0.1);height: auto; width: 100%;display: flex; justify-content: center;gap: 30px;background-color: white; margin-top: 20px;">
+      <div id="bag-1" style="width: 100%;box-shadow: 0 4px 8px rgba(0,0,0,0.5);">
+        <h4 style="margin-top: 20px;margin-left: 30px;">Best Deals furniture</h4>
+        <div id="dc" style="display: flex;flex-wrap: wrap;text-align: center;"></div>
+
+      </div>
+      <div id="bag-2" style="width: 100%; box-shadow: 0 4px 8px rgba(0,0,0,0.5);">
+        <h4 style="margin-top: 20px; margin-left: 30px;">Top pick of the sale</h4>
+        <div id="dc2" style="display: flex;flex-wrap: wrap;text-align: center;"></div>
+
+        
+          </div>
+            <div id="bag-3" style="width: 100%; box-shadow: 0 4px 8px rgba(0,0,0,0.5);">
+            <h4 style="margin-top: 20px; margin-left: 30px;">Make Your Home style</h4>
+              <div id="dc3" style="display: flex;flex-wrap: wrap;text-align: center;"></div>
+          </div>
+    </div>
+
+    <div id="ashik" style="box-shadow: 0 4px 8px rgba(0,0,0,0.1);height: auto; width: 100%;display: flex;padding: 20px;gap: 30px;background-color: white; margin-top: 20px;" >
+        <div id="bat1" style="width: 100%;box-shadow: 0 4px 8px rgba(0,0,0,0.5);">
+        <h4 style="margin-top: 20px;margin-left: 30px;">Best Geget & appliece</h4>
+        <div id="bol1" style="display: flex;flex-wrap: wrap;text-align: center;"></div>
+
+      </div>
+      <div id="bat2" style="width: 100%; box-shadow: 0 4px 8px rgba(0,0,0,0.5);">
+        <h4 style="margin-top: 20px; margin-left: 30px;">Hair & skin care Esasentials</h4>
+        <div id="bol2" style="display: flex;flex-wrap: wrap;text-align: center;"></div>
+
+        
+          </div>
+            <div id="bat3" style="width: 100%; box-shadow: 0 4px 8px rgba(0,0,0,0.5);">
+              <div id="bol3" style="display: flex;flex-wrap: wrap;text-align: center;"></div>
+          </div>
+    </div>
+
+    </div>
+
+
+    <div id="pro" style="height: auto; background-color: white; margin-top:10px;display: flex; justify-content: center;">
+        <div style=" padding-top: 10px;padding-left: 10px;"><h4>Furniture Deals</h4>
+      <div id="pro-1" style="width: 100%;text-align: center;height: auto; display: flex;">
+      </div>
+      
+    </div>
+      </div>
+
+ <div id="mouse" style="box-shadow: 0 4px 8px rgba(0,0,0,0.1);height: auto; width: 100%;display: flex; justify-content: center;gap: 30px;background-color: white; margin-top: 20px;">
+      <div id="mouse-1" style="width: 100%;box-shadow: 0 4px 8px rgba(0,0,0,0.5);">
+        <h4 style="margin-top: 20px;margin-left: 30px;">Best Gegets & applience</h4>
+        <div id="AC" style="display: flex;flex-wrap: wrap;text-align: center;"></div>
+
+      </div>
+      <div id="mouse-2" style="width: 100%; box-shadow: 0 4px 8px rgba(0,0,0,0.5);">
+        <h4 style="margin-top: 20px; margin-left: 30px;">Shop for your velntine</h4>
+        <div id="AC1" style="display: flex;flex-wrap: wrap;text-align: center;"></div>
+
+        
+          </div>
+            <div id="mouse-3" style="width: 100%; box-shadow: 0 4px 8px rgba(0,0,0,0.5);">
+            <h4 style="margin-top: 20px; margin-left: 30px;">Top picks of the sale</h4>
+              <div id="AC2" style="display: flex;flex-wrap: wrap;text-align: center;"></div>
+          </div>
+    </div>
+
+    
+    <div id="perfect" style="height: auto; background-color: white; margin-top:10px;display: flex; justify-content: center;">
+        <div style=" padding-top: 10px;padding-left: 10px;"><h4>Top Deals</h4>
+      <div id="perfect-1" style="width: 100%;text-align: center;height: auto; display: flex;">
+      </div>
+      
+    </div>
+      </div>
+
+       <div id="pen" style="height: auto; background-color: white; margin-top:10px;display: flex; justify-content: center;">
+        <div style=" padding-top: 10px;padding-left: 10px;"><h4>Book toys & More</h4>
+      <div id="pen-1" style="width: 100%;text-align: center;height: auto; display: flex;">
+      </div>
+      
+    </div>
+      </div>
+
+       <div id="set" style="height: auto; background-color: white; margin-top:10px;display: flex; justify-content: center;">
+        <div style=" padding-top: 30px;padding-left: 10px;"><h4>Top Deals on Home Essantials</h4>
+      <div id="set-1" style="width: 100%;text-align: center;height: auto; display: flex;">
+      </div>
+        </div>
+       </div>
+
+        <div id="pet" style="height: auto; background-color: white; margin-top:10px;display: flex; justify-content: center;">
+        <div style=" padding-top: 30px;padding-left: 10px;"><h4>Top Deals on Home Tv & Appliannces</h4>
+      <div id="pet-1" style="width: 100%;text-align: center;height: auto; display: flex;">
+      </div>
+        </div>
+       </div>
+      
+      <div id="jack" style="width: 100%;height: auto;background-color: rgb(231, 238, 250);margin-left: 15px;margin-top: 20px;"><h5 style="padding-top: 30px; padding-left: 20px;">Top Stores: Brand Directory</h5>
+        <p style="opacity: 0.7;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis quia, distinctio maxime id similique sed vitae explicabo, qui laboriosam tenetur eius neque esse quos delectus consectetur in ut hic!
+        </p>
+        <p style="opacity: 0.7;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias natus quas consequuntur laudantium delectus dolorum totam dicta corrupti. Quia eum aliquid nemo non distinctio voluptates unde, expedita fugit aut praesentium?
+        Debitis voluptate repellat deserunt natus, beatae quia assumenda veniam enim vel ut labore totam necessitatibus sequi ipsam impedit inventore? Saepe cum eum nam consequuntur numquam commodi sunt assumenda quia magnam.
+        Quidem, magnam esse. Earum soluta, dolores consequatur asperiores temporibus iste id quibusdam amet quam laudantium inventore explicabo numquam nihil ab, quidem possimus eligendi aspernatur. Neque voluptatum sint aliquid labore maxime!
+        Sint, placeat voluptas nihil omnis natus consectetur earum fugiat ea at distinctio, sit itaque quia modi perferendis veritatis vel hic accusantium rem a, obcaecati molestiae! Quos sit provident laboriosam rem?
+        Ipsum error reiciendis, soluta voluptatibus facere odit eveniet? Cumque maiores eligendi fugiat, iusto laborum porro? Dolorem ut, iste esse numquam molestiae eum amet pariatur voluptate placeat dignissimos aliquam dicta architecto?
+        Sint tempore magnam dicta ducimus ab esse eum, voluptate excepturi nihil quia doloribus. Earum libero corporis voluptate a enim at inventore, magni perspiciatis dolores voluptatibus magnam. Incidunt tempora nam dicta?
+        Temporibus soluta veritatis quas tempora? At labore, quisquam voluptatibus ipsum quod inventore perferendis eveniet repellendus quam fugit error enim illo officia deleniti repudiandae autem placeat. Reprehenderit voluptates pariatur aperiam ipsa.
+        Magnam vel, quos blanditiis sunt consectetur reiciendis molestiae cum fuga sed dolorum dolorem. Nulla ipsa blanditiis harum pariatur labore quis repudiandae soluta doloremque officia ipsam quia rem, asperiores consequuntur officiis?
+        Quibusdam earum atque quo, totam, consequatur reiciendis eaque tempora debitis harum eos dolores eius, aut saepe veniam nobis ex iusto labore temporibus a! Officiis suscipit ducimus architecto maiores saepe consequuntur?
+        Accusamus ea, at explicabo reprehenderit quo rerum ullam labore deserunt ipsa eligendi. Officia a quod perspiciatis corrupti qui praesentium! Nemo laboriosam possimus asperiores velit hic ducimus, tenetur veniam iure labore.
+        Veritatis, aperiam ex minus quam similique exercitationem inventore dolore ratione rem repellat qui. Laudantium tempora saepe quibusdam dolorum placeat numquam quia? Delectus totam veniam iure ea odit, consequatur placeat beatae!
+        Aspernatur ipsum culpa totam repudiandae, provident id ex fuga similique explicabo ipsa harum consequatur dicta officiis est sed qui rem numquam nesciunt incidunt eum eos. Necessitatibus hic totam ea ullam!
+        Placeat nemo nesciunt voluptate quaerat libero corrupti enim, itaque est ipsum necessitatibus, pariatur voluptatibus nulla repellat eos fugiat veritatis dolorem reprehenderit id vel ducimus dolorum quidem, rem commodi dolor. Unde.
+        Quod aperiam dolorum sit deserunt similique omnis laboriosam. Laboriosam, odit ipsum? Dolor beatae assumenda amet porro vitae pariatur placeat deserunt aut repellat culpa, aspernatur tempore ad repellendus tenetur libero perspiciatis.
+        Non, est nobis, atque quibusdam quis aliquam reiciendis libero doloremque, sequi sed repellendus id adipisci cumque alias dicta explicabo in ipsam ducimus cum dignissimos repudiandae asperiores. Dicta quas error odit.
+        Eius quisquam quidem ab harum possimus consequatur maxime aspernatur amet consectetur cupiditate provident explicabo praesentium voluptates quibusdam, deserunt molestias? Tempora maiores dicta velit quisquam animi quod fuga cumque asperiores! Soluta.
+        Commodi repellat nihil quis optio exercitationem? Non facere, rerum, est exercitationem excepturi tempora, rem ad laboriosam nisi animi eum dolore quae cum debitis. Dolores inventore vero commodi corporis repellendus tempore?
+        Obcaecati perferendis quam, ut eos minus, accusantium nihil necessitatibus ad saepe velit reprehenderit quisquam, vitae ea sequi quidem perspiciatis repellat labore consequuntur? Ratione fuga obcaecati eligendi nemo eaque quos debitis?
+        Eaque odio neque non impedit, ipsum vel quam nihil, incidunt fuga exercitationem, tempore itaque esse. Veniam, tempore. Id in aperiam eius, dolorum fugiat doloremque cumque animi earum enim hic illo!
+        Consequuntur fugiat tempora sunt ullam veritatis iste autem maxime adipisci, error, perspiciatis provident quis impedit magni deleniti, porro aliquam unde amet. Doloribus debitis dicta omnis eum, minus ipsa beatae sunt?
+        Reiciendis, blanditiis dolorum, cum ex quisquam culpa accusamus, veritatis distinctio perspiciatis error doloremque itaque. Velit distinctio et excepturi aliquam, temporibus, tempora quia adipisci ab odit reiciendis quisquam eum mollitia voluptatem.
+        Quos autem explicabo quod ex tenetur qui vel tempora voluptatum excepturi placeat repellat dolores exercitationem laborum enim in, consectetur quia. Illum quo voluptatibus assumenda libero, odio eaque saepe consequatur amet!
+        Nulla odio ad sunt doloremque sapiente dolorum itaque, porro unde, reiciendis totam voluptates nam, autem veniam perspiciatis nesciunt! Dolores eveniet porro doloribus distinctio accusamus quasi inventore necessitatibus enim quae atque
+        Beatae excepturi amet provident adipisci minima molestias eaque cumque saepe perspiciatis, rerum, pariatur non quasi. Assumenda quibusdam vel culpa praesentium nam explicabo exercitationem blanditiis odit, tempora, ducimus tempore nihil illum.
+        Minima vitae harum inventore a tenetur alias mollitia consequatur cupiditate enim voluptatum ex nostrum ipsa debitis, accusamus veritatis dicta nobis distinctio qui quasi eaque. Debitis totam dolor odit placeat neque.
+        Quidem provident voluptatum, cupiditate dicta iusto rem ad in laborum eligendi quasi tenetur commodi dolor? Natus, expedita facilis magnam nihil autem et est? Blanditiis iure necessitatibus eligendi consequatur, atque sit?
+        Cumque tempore doloremque exercitationem cupiditate libero labore harum, eligendi sint recusandae perferendis dolore, at adipisci mollitia est unde distinctio sit. Dolorem tenetur illum blanditiis eligendi consequuntur quaerat placeat velit laudantium?
+        Perferendis, libero dolorem incidunt distinctio praesentium qui beatae repellat consectetur, quas veniam, iusto itaque deleniti minus repellendus quam quo? Nihil veniam eveniet error! Culpa, ad incidunt adipisci asperiores rem blanditiis!
+        Iure asperiores, dolor ducimus quam repellendus laboriosam iste harum, recusandae et neque reiciendis adipisci, distinctio aliquid facilis ratione saepe vitae officiis aut odit quia repudiandae quisquam iusto quibusdam? Suscipit, dolores.
+        Exercitationem molestiae illum a dolor autem dignissimos ab voluptates cum delectus culpa cumque nam temporibus, expedita quidem iste perferendis unde fuga voluptatibus non necessitatibus consequatur hic deleniti incidunt maiores. Iusto!
+        Elaudantium omnis nisi eveniet minus?
+        Aperiam placeat molestias eos reiciendis esse architecto consectetur incidunt harum in aperiam voluptas dolorum recusandae, quasi quos at.
+        Maxime, eos! Deserunt ea iusto molestiae fugit adipisci, eius asperiores. Eaque dignissimos et tempore quibusdam pariatur nobis vero sapiente harum quaerat omnis excepturi, ipsam quisquam magnam, rerum soluta, maiores ipsum.
+        Deserunt natus numquam ad! Delectus veniam voluptates similique. Aut facilis sunt a minima assumenda quae iusto amet cumque consectetur, ipsa sequi, eius laborum sint ratione harum id ex autem perspiciatis.
+        Possimus delectus saepe, debitis at maxime rerum id, non consectetur ipsam asperiores tempore quod velit. Nulla libero nihil distinctio doloribus sequi laborum sint ipsam maxime numquam, dolorem id, vitae velit.
+        Iusto labore iste illo quibusdam maxime ut reprehenderit non voluptatibus, modi ratione ea laudantium, pariatur possimus similique a incidunt. In, sint. Exercitationem doloremque id labore molestiae vitae maxime dolorem possimus.
+        
+        Corrupti, facilis. Sapiente suscipit, dolorem autem omnis earum minus placeat fuga repellendus a totam, porro, molestiae ipsa molestias obcaecati quas. Dolorum, eum doloribus sint voluptatum id cupiditate eos nisi accusamus.</p>
+      </div>
+   
+
+
+<footer>
+ 
+  <div class="footer-top">
+    <div class="footer-column">
+      <h4>About</h4>
+      <a href="#">Contact Us</a>
+      <a href="#">About Us</a>
+      <a href="#">Careers</a>
+      <a href="#">Flipkart Stories</a>
+      <a href="#">Press</a>
+      <a href="#">Corporate Information</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Group Companies</h4>
+      <a href="#">Myntra</a>
+      <a href="#">Cleartrip</a>
+      <a href="#">Shopsy</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Help</h4>
+      <a href="#">Payments</a>
+      <a href="#">Shipping</a>
+      <a href="#">Cancellation & Returns</a>
+      <a href="#">FAQ</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Consumer Policy</h4>
+      <a href="#">Cancellation & Returns</a>
+      <a href="#">Terms Of Use</a>
+      <a href="#">Security</a>
+      <a href="#">Privacy</a>
+      <a href="#">Sitemap</a>
+      <a href="#">Grievance Redressal</a>
+      <a href="#">EPR Compliance</a>
+      <a href="#">FSSAI Food Safety</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Mail Us</h4>
+      <p class="address">
+        Flipkart Internet Private Limited,<br>
+        Buildings Alyssa, Begonia &<br>
+        Clove Embassy Tech Village,<br>
+        Outer Ring Road,<br>
+        Bengaluru, Karnataka, India
+      </p>
+
+      <div class="social-icons">
+        <span><i class="bi bi-instagram"></i></span>
+        <span><i class="bi bi-twitter-x"></i></span>
+        <span><i class="bi bi-facebook"></i></span>
+        <span><i class="bi bi-youtube"></i></span>
+      </div>
+    </div>
+
+    <div class="footer-column">
+      <h4>Registered Office Address</h4>
+      <p class="address">
+        Flipkart Internet Private Limited,<br>
+        Bengaluru, Karnataka, India<br><br>
+        CIN: U51109KA2012PTC066107<br>
+        Phone: 044-45614700
+      </p>
+    </div>
+  </div>
+
+
+  <div class="footer-bottom">
+    <div class="left">
+      <a href="#"><i class="bi bi-shop"></i>  Become a Seller</a>
+      <a href="#"> <i class="bi bi-badge-ad-fill"></i> Advertise</a>
+      <a href="#"> <i class="bi bi-gift"></i>  Gift Cards</a>
+      <a href="#"> <i class="bi bi-question-circle-fill"></i>   Help Center</a>
+    </div>
+
+  
+
+    <div class="right">
+<a href="">DEVELOPED BY PANCHAL ASHIK</a>
+       <img src="https://static-assets-web.flixcart.com/batman-retu…batman-returns/p/images/payment-method-69e7ec.svg" alt="">
+    </div>
+  </div>
+</footer>
+
+
+    
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      let arr =[{
+        Image:"https://rukminim2.flixcart.com/fk-p-flap/64/64/image/e00302d428f5c7be.png?q=100",
+        name:"Minitues"
+      },
+    {
+    Image : "https://rukminim2.flixcart.com/fk-p-flap/64/64/image/5f2ee7f883cdb774.png?q=100",
+    name:"Mobiles & tablets"
+    },
+    {
+      Image :"https://rukminim1.flixcart.com/fk-p-flap/64/64/image/ff559cb9d803d424.png?q=100",
+      name:"Fasion"
+    },
+    {
+      Image:"https://rukminim1.flixcart.com/fk-p-flap/64/64/image/af646c36d74c4be9.png?q=100",
+      name :"Electronics"
+    },
+    {
+      Image:"https://rukminim2.flixcart.com/fk-p-flap/64/64/image/e90944802d996756.jpg?q=100",
+      name:"TVs & Appliances"
+    },
+    {
+      Image:"https://rukminim1.flixcart.com/fk-p-flap/64/64/image/0ff199d1bd27eb98.png?q=100",
+      name:"Home & Furniture"
+    },
+    {
+      Image :"https://rukminim2.flixcart.com/fk-p-flap/64/64/image/3c647c2e0d937dc5.png?q=100",
+      name:"Flights"
+    },
+
+    {
+      Image:"https://rukminim2.flixcart.com/fk-p-flap/64/64/image/b3020c99672953b9.png?q=100",
+      name:"buty & health"
+    },
+    {
+      Image:"https://rukminim1.flixcart.com/fk-p-flap/64/64/image/e730a834ad950bae.png?q=100",
+      name:"Grocery"
+    }
+
+
+  ]
+
+  arr.map((el,i)=>{
+    let div = document.createElement("div")
+    div.style.marginTop = "20px"
+   
+    let image = document.createElement("img")
+    image.src = el.Image
+
+
+    let name = document.createElement("p")
+    name.innerText = el.name
+
+    div .append(image,name)
+    document.querySelector("#nav-product").append(div)
+
+  })
+
+  var a = [
+        "https://rukminim1.flixcart.com/fk-p-flap/3200/540/image/affd2e30c895a095.jpg?q=60",
+        "https://rukminim1.flixcart.com/fk-p-flap/3240/540/image/c1786792b3252eb0.jpg?q=60",
+        "https://rukminim1.flixcart.com/fk-p-flap/3240/540/image/66faf3950cda0b7a.png?q=60",
+        "https://rukminim2.flixcart.com/fk-p-flap/3240/540/image/94f6e133cb568401.jpg?q=60",
+      ];
+
+      i = 0;
+      var image = document.createElement("img");
+      image.src = a[i];
+      image.style.width = "100%";
+      image.style.height = "auto";
+      image.style.marginTop = "20px";
+      // image.style.marginTop = "100px";
+
+      setInterval(() => {
+        i++;
+        if (i == a.length) {
+          i = 0;
+        }
+        image.src = a[i];
+      }, 1500);
+
+      document.querySelector(".slider").append(image);
+
+      
+      let b =[{
+        Image:"https://rukminim2.flixcart.com/image/240/240/xif0q/projector/9/u/x/atom-3x-native-fhd-1080p-4k-support-13-0-android-projector-300-original-imahgxv3fubwqk34.jpeg?q=60",
+        name:"projector",
+        price:" From ₹6,999"
+      },
+      {
+        Image:"https://rukminim2.flixcart.com/image/240/240/kcf4lu80/speaker/mobile-tablet-speaker/h/u/f/srs-xb23-sony-original-imaftk66vjxp86h5.jpeg?q=60",
+        name:"speaker",
+        price:"Form₹5999"
+      },
+      {
+        Image:"https://rukminim2.flixcart.com/image/240/240/xif0q/monitor/i/q/k/-original-imahbzhcdvc6gkhu.jpeg?q=60",
+        name:"Monitors",
+        price:" From ₹6599"
+      },
+      {
+        Image:"https://rukminim2.flixcart.com/image/240/240/xif0q/monitor/j/s/y/-original-imahgdyffnjne9vv.jpeg?q=60",
+        name:"Monitor",
+        price:" From ₹8799"
+
+      },
+      {
+        Image:"https://rukminim2.flixcart.com/image/240/240/xif0q/dslr-camera/8/g/b/eos-r50-24-2-r50-canon-original-imagngcb6vj5fmyg.jpeg?q=60",
+        name:"Camera",
+        price:" From ₹9999"
+      },
+      {
+      Image:"https://rukminim2.flixcart.com/image/240/240/xif0q/smartwatch/5/v/s/-original-imagxrhetgfuebnn.jpeg?q=60",
+      name:"Smart Watch",
+      price:" From ₹3999"
+      }
+    ]
+
+       b.map((el,i)=>{
+        let div = document.createElement("div")
+       // div.style.marginTop = "10px"
+    
+    
+        let image = document.createElement("img")
+        image.src = el.Image
+        // image.style.marginTop = "15px"
+        image.style.width = "100%"
+        image.style.height = "auto"
+        // image.style.objectFit = "cover"
+        
+        //  image.style.width = "130px"
+        //  image.style.height = "200px"
+        //  image.style.paddingLeft = "40px"
+        //  image.style.marginTop = "50px"
+        
+        
+        let name = document.createElement("p")
+        name.innerText = el.name
+        name.style.marginTop = "10px"
+
+         let price = document.createElement("b")
+        price.innerText = el.price
+              
+        div .append(image,name,price)
+        document.querySelector(".product-1").append(div)
+    
+      })
+
+    let div1 = document.createElement("div")
+    // div1.style.marginTop = "0px"
+
+
+    let image1 = document.createElement("img")
+    image1.src = "https://rukminim1.flixcart.com/fk-p-flap/1060/1620/image/bf2ff322082645a7.png?q=60"
+    image1.style.width = "100%"
+    image1.style.height = "auto"
+    image1.style.marginLeft = "50px"
+   
+    div1 .append(image1)
+    document.querySelector("#poster").append(div1)
+
+    let pc = [{
+      image:"https://rukminim1.flixcart.com/image/420/420/xif0q/wall-clock/d/x/j/wooden-wall-clock-32-5-wc331-analog-kpenterprises-20-original-imahfyyvpngfyxzt.jpeg?q=60",
+      name:"clock",
+      price:"Min.50% Off"
+    },
+  {
+    image:"https://rukminim1.flixcart.com/image/420/420/xif0q/roti-cover/n/m/u/200-fabric-caseroll-roti-cloth-grey-check-pack-1-1-aarnikawrap-original-imahk6y6gwsnnhdd.jpeg?q=60",
+      name:"Roti Cover",
+      price:"Min.50% Off"
+  },
+{
+  image:"https://rukminim1.flixcart.com/image/420/420/xif0q/curtain/x/d/c/ac-curtain-1-210-door-ghdrtmsc001-ring-rod-goel-home-decor-original-imah8zwxvxpeevhp.jpeg?q=60",
+      name:"Curtains",
+      price:"Min.50% Off"
+},
+{
+  image:"https://rukminim1.flixcart.com/image/420/420/xif0q/shopsy-bedsheet/l/y/c/plain-1-9167-rivek-decor-original-imahh9qkxxgvkhux.jpeg?q=60",
+      name:"Bedsheet",
+      price:"Min.50% Off"
+}]
+
+pc.map((el,i)=>{
+    let div = document.createElement("div")
+    div.style.marginTop = "20px"
+    // div.style.border = "1px solid"
+    div.style.marginLeft = "20px"
+    div.style.boxShadow = "0px 0px 1px 1px rgba(0,0,0,0.75)"
+   
+    let image = document.createElement("img")
+    image.src = el.image
+    image.style.width = "100%"
+    image.style.height = "auto"
+    image.style.padding="10px"
+
+
+    let name = document.createElement("h6")
+    name.innerText = el.name
+
+    let price = document.createElement("b")
+    price.innerText = el.price
+    price.style.color="green"
+
+    div .append(image,name,price)
+    document.querySelector("#pc").append(div)
+
+  })
+
+
+   let pc2 = [{
+      image:"https://rukminim1.flixcart.com/image/420/420/xif0q/shoe/a/5/u/-original-imahesyawgzggu6e.jpeg?q=60",
+      name:"shoes",
+      price:"Min.70% Off"
+    },
+  {
+    image:"https://rukminim1.flixcart.com/image/420/420/xif0q/slipper-flip-flop/h/i/q/-original-imahg2tdkzwubydj.jpeg?q=60",
+      name:"Slippers",
+      price:"Min.75% Off"
+  },
+{
+  image:"https://rukminim1.flixcart.com/image/420/420/xif0q/watch/i/l/q/1-1221-rls-boys-girls-original-imahkbwukhv9ujgu.jpeg?q=60",
+      name:"Watch",
+      price:"Min.45% Off"
+},
+{
+  image:"https://rukminim1.flixcart.com/image/420/420/xif0q/bra/n/5/h/lightly-padded-32-3-regular-no-regular-nov25brazoyaengcb3-piylu-original-imahg93yswxnyntw.jpeg?q=60",
+      name:"Bra",
+      price:"Min.50% Off"
+}]
+
+pc2.map((el,i)=>{
+    let div = document.createElement("div")
+    div.style.marginTop = "20px"
+    // div.style.border = "1px solid"
+    div.style.marginLeft = "20px"
+    div.style.boxShadow = "0px 0px 1px 1px rgba(0,0,0,0.75)"
+    let image = document.createElement("img")
+    image.src = el.image
+    image.style.width = "100%"
+    image.style.height = "auto"
+    image.style.padding= "10px"
+    
+    
+
+
+    let name = document.createElement("h6")
+    name.innerText = el.name
+
+    let price = document.createElement("b")
+    price.innerText = el.price
+    price.style.color="green"
+
+    div .append(image,name,price)
+    document.querySelector("#pc2").append(div)
+
+  })
+
+    let div2 = document.createElement("div")
+   
+    // div1.style.marginTop = "0px"
+
+
+    let image2 = document.createElement("img")
+    image2.src = "https://rukminim1.flixcart.com/www/1060/1460/promos/26/09/2023/6c3c5fe2-c236-4fa2-8d97-595e1e01da01.jpg?q=60"
+    image2.style.width = "100%"
+    image2.style.height = "auto"
+    // image2.style.objectFit="cover"
+    
+    // image2.style.marginLeft =  "50px"
+   
+    div2 .append(image2)
+    document.querySelector("#app-3").append(div2)
+
+
+     let dc = [{
+      image:"https://rukminim2.flixcart.com/image/420/420/xif0q/shoe-rack/v/s/z/36-45-0-3-plasticblack-shoe-rack-with-cover-plastic-double-5-original-imahh9zdd2shzhhf.jpeg?q=60",
+      name:"shoes rack",
+      price:"Min.50% Off"
+    },
+  {
+    image:"https://rukminim2.flixcart.com/image/420/420/xif0q/shopsy-collapsible-wardrobe/y/6/i/280-carbon-steel-570-1-4-at-4-firozi-attache-firozi-730-original-imahek4qcjkjzuvh.jpeg?q=60",
+      name:"collapsible wardrobe",
+      price:"Min.50% Off"
+  },
+{
+  image:"https://rukminim2.flixcart.com/image/420/420/xif0q/home-temple/s/x/d/t1white-hoodwin-original-imah99vgphekyteg.jpeg?q=60",
+      name:"Home Temple",
+      price:"Min.45% Off"
+},
+{
+  image:"https://rukminim2.flixcart.com/image/420/420/xif0q/shopsy-hammock-swing/b/m/6/70-0-4-cotton-round-hanging-swing-for-adults-cotton-swing-for-original-imah6t5grpvjmgjf.jpeg?q=60",
+      name:"Hammock Swing",
+      price:"Min.50% Off"
+}]
+
+dc.map((el,i)=>{
+    let div = document.createElement("div")
+    div.style.marginTop = "20px"
+    // div.style.border = "1px solid"
+    div.style.marginLeft = "20px"
+    div.style.boxShadow = "0px 0px 1px 1px rgba(0,0,0,0.75)"
+    let image = document.createElement("img")
+    image.src = el.image
+    image.style.width = "100%"
+    image.style.height = "auto"
+    image.style.padding= "10px"
+
+
+    let name = document.createElement("h6")
+    name.innerText = el.name
+
+    let price = document.createElement("b")
+    price.innerText = el.price
+    price.style.color="green"
+
+    div .append(image,name,price)
+    document.querySelector("#dc").append(div)
+
+  })
+
+   let dc2 = [{
+      image:"https://rukminim2.flixcart.com/image/420/420/xif0q/desk-organizer/x/9/8/6-xl-plastic-modular-drawer-modular-drawer-system-for-home-original-imahfrrrwfcx3rkm.jpeg?q=60",
+      name:"vehicle washing cloth",
+      price:"Min.70% Off"
+    },
+  {
+    image:"https://rukminim2.flixcart.com/image/420/420/xif0q/vehicle-washing-cloth/l/k/l/3-premium-microfiber-super-absorbent-600-gsm-towel-cloth-for-car-original-imahc68gxqyqg6uf.jpeg?q=60",
+      name:"Desk Organizer",
+      price:"Min.50% Off"
+  },
+{
+  image:"https://rukminim2.flixcart.com/image/420/420/xif0q/vehicle-pull-along/l/z/x/friction-police-car-toy-for-kids-pull-back-toy-vehicle-magic-original-imahjw87ydk2ppgh.jpeg?q=60",
+      name:"Remote control",
+      price:"Min.45% Off"
+},
+{
+  image:"https://rukminim2.flixcart.com/image/420/420/xif0q/vehicle-key-cover/a/b/v/kc-metal-fordflip3b-zealsy-original-imahev2pg7hyxcan.jpeg?q=60",
+      name:"vechal key cover",
+      price:"Min.50% Off"
+}]
+
+dc2.map((el,i)=>{
+    let div = document.createElement("div")
+    div.style.marginTop = "20px"
+    // div.style.border = "1px solid"
+    div.style.marginLeft = "20px"
+    div.style.boxShadow = "0px 0px 1px 1px rgba(0,0,0,0.75)"
+    let image = document.createElement("img")
+    image.src = el.image
+    image.style.width = "100%"
+    image.style.height = "auto"
+    image.style.padding= "10px"
+
+
+    let name = document.createElement("h6")
+    name.innerText = el.name
+
+    let price = document.createElement("b")
+    price.innerText = el.price
+    price.style.color="green"
+
+    div .append(image,name,price)
+    document.querySelector("#dc2").append(div)
+
+  })
+
+   let dc3 = [{
+      image:"https://rukminim2.flixcart.com/image/420/420/kiyw9e80/chopper/p/u/k/handy-mini-chopper-pigeon-original-imafyn99tchfgvzs.jpeg?q=60",
+      name:"chopers &Slicer",
+      price:"Min.50% Off"
+    },
+  {
+    image:"https://rukminim2.flixcart.com/image/420/420/xif0q/shopsy-rack-shelf/m/7/p/storage-kitchen-cabinate-stalory-original-imahf7cdw6zb5e6b.jpeg?q=60",
+      name:"  Bathroom Rack",
+      price:"Min.50% Off"
+  },
+{
+  image:"https://rukminim2.flixcart.com/image/420/420/xif0q/kitchen-rack/g/y/q/kitchen-rack-brown-colour-touchwood-arts-original-imahjvjfbgzm9sey.jpeg?q=60",
+      name:"Kitchen Rack",
+      price:"Min.45% Off"
+},
+{
+  image:"https://rukminim2.flixcart.com/image/420/420/xif0q/shopsy-broom-brush/7/t/1/1-window-glass-cleaner-wiper-for-solar-panel-cleaning-bathroom-original-imah2svnhw4ks4gj.jpeg?q=60",
+      name:"broom & brush",
+      price:"Min.50% Off"
+}]
+
+dc3.map((el,i)=>{
+    let div = document.createElement("div")
+    div.style.marginTop = "20px"
+    // div.style.border = "1px solid"
+    div.style.marginLeft = "20px"
+    div.style.boxShadow = "0px 0px 1px 1px rgba(0,0,0,0.75)"
+    let image = document.createElement("img")
+    image.src = el.image
+    image.style.width = "100%"
+    image.style.height = "auto"
+    image.style.padding= "10px"
+
+
+    let name = document.createElement("h6")
+    name.innerText = el.name
+
+    let price = document.createElement("b")
+    price.innerText = el.price
+    price.style.color="green"
+
+    div .append(image,name,price)
+    document.querySelector("#dc3").append(div)
+
+  })
+
+   let bol1 = [{
+      image:"https://rukminim1.flixcart.com/image/420/420/xif0q/headphone/r/c/j/-original-imahae3ea2j4mhkt.jpeg?q=60",
+      name:"True Wireless Earbuds",
+      price:"Min.50% Off"
+    },
+  {
+    image:"https://rukminim1.flixcart.com/image/420/420/xif0q/smartwatch/n/z/f/-original-imah8762zqn7v9gt.jpeg?q=60",
+      name:"Smart Watch",
+      price:"Min.50% Off"
+  },
+{
+  image:"https://rukminim1.flixcart.com/image/420/420/xif0q/speaker/mobile-tablet-speaker/g/j/q/m412sp-portable-dynamic-thunder-sound-with-high-bass-mz-original-imahk57yyhprkkkk.jpeg?q=60",
+      name:"Speaker",
+      price:"Min.50% Off"
+},
+{
+  image:"https://rukminim1.flixcart.com/image/420/420/xif0q/headphone/u/l/z/-original-imahgnf4hm7kvf6b.jpeg?q=60",
+      name:"nackband Earphones",
+      price:"Min.50% Off"
+}]
+
+bol1.map((el,i)=>{
+    let div = document.createElement("div")
+    div.style.marginTop = "20px"
+    // div.style.border = "1px solid"
+    div.style.marginLeft = "20px"
+    div.style.boxShadow = "0px 0px 1px 1px rgba(0,0,0,0.75)"
+    let image = document.createElement("img")
+    image.src = el.image
+    image.style.width = "100%"
+    image.style.height = "auto"
+    image.style.padding= "10px"
+    
+
+
+    let name = document.createElement("h6")
+    name.innerText = el.name
+
+    let price = document.createElement("b")
+    price.innerText = el.price
+    price.style.color="green"
+
+    div .append(image,name,price)
+    document.querySelector("#bol1").append(div)
+
+  })
+
+
+  let bol2 = [{
+      image:"https://rukminim1.flixcart.com/image/420/420/xif0q/face-wash/v/z/d/200-ocean-for-men-fights-acne-pimple-brighten-skin-all-skin-original-imah5gh63zgy8ph3.jpeg?q=60",
+      name:"Face Wash",
+      price:"Min.50% Off"
+    },
+  {
+    image:"https://rukminim1.flixcart.com/image/420/420/xif0q/skin-treatment/x/a/o/50-18-brightening-20-collagen-face-serum-fade-dark-spots-original-imahg5vyajzefebd.jpeg?q=60",
+      name:"Face Serum",
+      price:"Min.50% Off"
+  },
+{
+  image:"https://rukminim1.flixcart.com/image/420/420/xif0q/hair-oil/h/6/2/-original-imahg5yhvkvxngcv.jpeg?q=60",
+      name:"Hair Oil",
+      price:"Min.45% Off"
+},
+{
+  image:"https://rukminim1.flixcart.com/image/420/420/xif0q/sunscreen/w/e/b/-original-imah9cbe4ajd7nvs.jpeg?q=60",
+      name:"Sunscreen",
+      price:"Min.50% Off"
+}]
+
+bol2.map((el,i)=>{
+    let div = document.createElement("div")
+    div.style.marginTop = "20px"
+    // div.style.border = "1px solid"
+    div.style.marginLeft = "20px"
+    div.style.boxShadow = "0px 0px 1px 1px rgba(0,0,0,0.75)"
+    let image = document.createElement("img")
+    image.src = el.image
+    image.style.width = "100%"
+    image.style.height = "auto"
+    image.style.padding= "10px"
+    // image.style.objectFit = "cover"
+
+
+    let name = document.createElement("h6")
+    name.innerText = el.name
+
+    let price = document.createElement("b")
+    price.innerText = el.price
+    price.style.color="green"
+
+    div .append(image,name,price)
+    document.querySelector("#bol2").append(div)
+
+  })
+
+   let bol3 = document.createElement("div")
+   
+    // div1.style.marginTop = "0px"
+
+
+    let image4 = document.createElement("img")
+    image4.src = "https://rukminim1.flixcart.com/www/1060/1460/promos/15/09/2023/9c056ec4-f39c-4740-938d-33e1a6c7c108.jpg?q=60"
+    image4.style.width = "100%" 
+    // image4.style.marginLeft = "50px"
+    image4.style.height = "auto"
+    // image4.style.objectFit = "cover"
+
+    
+    // image2.style.marginLeft =  "50px"
+   
+    bol3 .append(image4)
+    document.querySelector("#bol3").append(bol3)
+
+
+
+    let pro =[{
+        Image:"https://rukminim2.flixcart.com/image/240/240/j5ihlzk0/bed-mattress/2/y/c/6-48-75-skbnnldb75x48x06-bonnell-spring-peps-original-imaevnpjqz2mwyrz.jpeg?q=60",
+        name:"Mattress",
+        price:" From ₹2,299"
+      },
+      {
+        Image:"https://rukminim2.flixcart.com/image/240/240/l4d2ljk0/sofa-sectional/x/j/l/left-facing-180-34-aqua-blue-241-3-polyester-80-steffan-l-sheped-original-imagf9zer8ptqhrh.jpeg?q=60",
+        name:"sofa & sectional",
+        price:"Form₹7,999"
+      },
+      {
+        Image:"https://rukminim1.flixcart.com/image/240/240/xif0q/office-study-chair/z/t/2/1-teak-sagun-58-42-js-29-beaatho-121-92-original-imagrwgshgp2bhwv.jpeg?q=60",
+        name:"office & study chair",
+        price:" From ₹1890"
+      },
+      {
+        Image:"https://rukminim1.flixcart.com/image/240/240/jm9hfgw0/bed/h/g/g/king-na-rosewood-sheesham-bkwl05nhbs0401d1p-flipkart-perfect-original-imaf97cwhvgnwg95.jpeg?q=60",
+        name:"Beds",
+        price:" From ₹1799"
+
+      },
+      {
+        Image:"https://rukminim1.flixcart.com/image/240/240/kb9ou4w0/tv-entertainment-unit/f/x/h/particle-board-za0022wh-barewether-white-with-walnut-original-imafsnnntmvsysap.jpeg?q=60",
+        name:"Tv units",
+        price:" From ₹1299"
+      },
+      {
+      Image:"https://rukminim1.flixcart.com/image/240/240/xif0q/sofa-bed/3/q/4/-original-imagm9ckhma9u8a3.jpeg?q=60",
+      name:"Sofa Beds",
+      price:" From ₹6099"
+      },
+{
+       Image:"https://rukminim1.flixcart.com/image/240/240/xif0q/sofa-set/x/o/p/blue-cotton-3-2-1-1-sofa-set-blue-amorini-aqua-blue-original-imagwgmtf5gu4ycc.jpeg?q=60",
+      name:"Sofa Beds",
+      price:" From ₹6099"
+}
+    ]
+
+       pro.map((el,i)=>{
+        let div = document.createElement("div")
+       // div.style.marginTop = "10px"
+    
+    
+        let image = document.createElement("img")
+        image.src = el.Image
+        // image.style.marginTop = "15px"
+        image.style.width = "100%"
+        image.style.height = "auto"
+         image.style.paddingLeft = "40px"
+         image.style.marginTop = "20px"
+        // image.style.objectFit = "cover"
+        image.style.padding = "10px"
+    
+        
+        
+        let name = document.createElement("p")
+        name.innerText = el.name
+        name.style.marginTop = "10px"
+
+         let price = document.createElement("b")
+        price.innerText = el.price
+              
+        div .append(image,name,price)
+        document.querySelector("#pro-1").append(div)
+    
+      })
+
+let AC = [{
+      image:"https://rukminim1.flixcart.com/image/420/420/xif0q/headphone/6/9/j/-original-imah388mvfzxm2u8.jpeg?q=60",
+      name:"True wirless",
+      price:"Min.50% Off"
+    },
+  {
+    image:"https://rukminim1.flixcart.com/image/420/420/xif0q/watch/l/q/1/1-latest-light-v-collection-girls-original-imah8q8gsmfvs9hk.jpeg?q=60",
+      name:"Wrist Watches",
+      price:"Min.90% Off"
+  },
+{
+  image:"https://rukminim1.flixcart.com/image/420/420/xif0q/smartwatch/n/l/a/-original-imahgh9twzzte3uf.jpeg?q=60",
+      name:"Smart Watches",
+      price:"Min.45% Off"
+},
+{
+  image:"https://rukminim1.flixcart.com/image/420/420/xif0q/headphone/u/l/z/-original-imahgnf4hm7kvf6b.jpeg?q=60",
+      name:"Neckbend",
+      price:"Min.50% Off"
+}]
+
+AC.map((el,i)=>{
+    let div = document.createElement("div")
+    div.style.marginTop = "20px"
+    // div.style.border = "1px solid"
+    div.style.marginLeft = "20px"
+    div.style.boxShadow = "0px 0px 1px 1px rgba(0,0,0,0.75)"
+    let image = document.createElement("img")
+    image.src = el.image
+    image.style.width = "100%"
+    image.style.height = "auto"
+    image.style.padding= "10px"
+
+
+    let name = document.createElement("h6")
+    name.innerText = el.name
+
+    let price = document.createElement("b")
+    price.innerText = el.price
+    price.style.color="green"
+
+    div .append(image,name,price)
+    document.querySelector("#AC").append(div)
+
+  })
+
+
+  let AC1 = [{
+      image:"https://rukminim1.flixcart.com/image/420/420/xif0q/face-wash/c/d/a/300-ocean-for-men-anti-acne-pimple-skin-brightening-all-skin-original-imah5gh6hayymkfv.jpeg?q=60",
+      name:"Face Wash",
+      price:"Min.50% Off"
+    },
+  {
+    image:"https://rukminim1.flixcart.com/image/420/420/xif0q/perfume/w/p/i/-original-imaheatfrvhz5fad.jpeg?q=60",
+      name:"Eau De Perfum",
+      price:"Min.50% Off"
+  },
+{
+  image:"https://rukminim1.flixcart.com/image/420/420/xif0q/lipstick/2/f/o/comfy-matte-wow-liquid-lipstick-cocoa-crush-07-3-8ml-highly-original-imahyz8tgzz65gym.jpeg?q=60",
+      name:"Lipstick",
+      price:"Explore Now"
+},
+{
+  image:"https://rukminim1.flixcart.com/image/420/420/xif0q/deodorant/v/n/d/-original-imah3g7wwvezpyw4.jpeg?q=60",
+      name:"Perfume",
+      price:"Min.50% Off"
+}]
+
+AC1.map((el,i)=>{
+    let div = document.createElement("div")
+    div.style.marginTop = "20px"
+    // div.style.border = "1px solid"
+    div.style.marginLeft = "20px"
+    div.style.boxShadow = "0px 0px 1px 1px rgba(0,0,0,0.75)"
+    let image = document.createElement("img")
+    image.src = el.image
+    image.style.width = "100%"
+    image.style.height = "auto"
+    image.style.padding= "10px"
+
+
+    let name = document.createElement("h6")
+    name.innerText = el.name
+
+    let price = document.createElement("b")
+    price.innerText = el.price
+    price.style.color="green"
+
+    div .append(image,name,price)
+    document.querySelector("#AC1").append(div)
+
+  })
+   
+  let AC2 = [{
+      image:"https://rukminim1.flixcart.com/image/420/420/xif0q/vehicle-washing-cloth/l/k/l/3-premium-microfiber-super-absorbent-600-gsm-towel-cloth-for-car-original-imahc68gxqyqg6uf.jpeg?q=60",
+      name:"vechle cling cloths",
+      price:"Min.50% Off"
+    },
+  {
+    image:"https://rukminim1.flixcart.com/image/420/420/xif0q/drone/o/b/b/100-30-90-foldable-drone-with-full-hd-camera-wifi-fpv-altitude-original-imahfbscntgzvyje.jpeg?q=60",
+      name:"Mini Drones",
+      price:"Most Loved"
+  },
+{
+  image:"https://rukminim1.flixcart.com/image/420/420/xif0q/two-wheeler-cover/t/e/g/hero-splender-plus-splendor-plus-zaqe-original-imah4yk4zyppzm6s.jpeg?q=60",
+      name:"Bike body cover",
+      price:"Min.50% Off"
+},
+{
+  image:"https://rukminim1.flixcart.com/image/420/420/xif0q/remote-control-toy/x/e/7/rock-crawler-1-16-offroad-monster-rc-car-with-smoke-function-original-imahgpze6hgfahz9.jpeg?q=60",
+      name:"Remote control toy",
+      price:"Min.50% Off"
+}]
+
+AC2.map((el,i)=>{
+    let div = document.createElement("div")
+    div.style.marginTop = "20px"
+    // div.style.border = "1px solid"
+    div.style.marginLeft = "20px"
+    div.style.boxShadow = "0px 0px 1px 1px rgba(0,0,0,0.75)"
+    let image = document.createElement("img")
+    image.src = el.image
+    image.style.width = "100%"
+    image.style.height = "auto"
+    image.style.padding= "10px"
+
+
+    let name = document.createElement("h6")
+    name.innerText = el.name
+
+    let price = document.createElement("b")
+    price.innerText = el.price
+    price.style.color="green"
+
+    div .append(image,name,price)
+    document.querySelector("#AC2").append(div)
+
+  })
+
+    let perfect =[{
+        Image:"https://rukminim1.flixcart.com/image/240/240/xif0q/tablet/r/k/q/-original-imahayyde8ugshtm.jpeg?q=60",
+        name:"Apple ipads",
+        price:"Shop Now"
+      },
+      {
+        Image:"https://rukminim1.flixcart.com/image/240/240/k01b8280/acoustic-guitar/t/f/a/rvl-38c-lgp-bk-revel-original-imafjx6hmdg9vczz.jpeg?q=60",
+        name:"Instruments",
+        price:"up to 70% off"
+      },
+      {
+        Image:"https://rukminim1.flixcart.com/image/240/240/xif0q/perfume/a/k/i/100-mystic-bloom-perfume-for-women-floral-musky-notes-long-original-imahbyjrakcvmgqh.jpeg?q=60",
+        name:"Perfum and more",
+        price:"min 50% off"
+      },
+      {
+        Image:"https://rukminim1.flixcart.com/image/240/240/kp2y2kw0/instant-camera/3/z/r/treasure-box-mini-11-instax-mini-11-fujifilm-original-imag3efzmkzvretx.jpeg?q=60",
+        name:"Instance Cemeras",
+        price:" From ₹3999"
+
+      },
+      {
+        Image:"https://rukminim1.flixcart.com/image/240/240/kgcl7680/nut-dry-fruit/z/b/j/500-100-natural-premium-californian-pouch-happilo-original-imafwhmvxgzkxf8c.jpeg?q=60",
+        name:"Dry fruits & nuts",
+        price:"up to 65% off"
+      },
+      {
+      Image:"https://rukminim1.flixcart.com/image/240/240/xif0q/camera-bag/case/s/c/b/carrying-case-for-dji-mini-4-pro-mini-4-pro-rc-2-case-storage-original-imagxhw8uzna3zju.jpeg?q=60",
+      name:"Cemra Bages",
+      price:"min 50% off"
+      },
+{
+       Image:"https://rukminim1.flixcart.com/image/240/240/jzx0wi80/protein-supplement/g/u/y/l-glutamine-powder-100gms-6600720153-as-it-is-nutrition-original-imafez7q7gxgwczu.jpeg?q=60",
+      name:"Heath Suppliments",
+      price:"up to 70% off"
+}
+    ]
+
+       perfect.map((el,i)=>{
+        let div = document.createElement("div")
+        // div.style.marginTop = "10px"
+    
+    
+        let image = document.createElement("img")
+        image.src = el.Image
+        // image.style.marginTop = "15px"
+        image.style.width = "100%"
+        image.style.height = "auto"
+         image.style.padding = "20px"
+         image.style.marginTop = "20px"
+        
+       
+    
+        
+        
+        let name = document.createElement("p")
+        name.innerText = el.name
+        name.style.marginTop = "10px"
+
+         let price = document.createElement("b")
+        price.innerText = el.price
+              
+        div .append(image,name,price)
+        document.querySelector("#perfect-1").append(div)
+    
+      })
+
+      let pen =[{
+        Image:"https://rukminim2.flixcart.com/image/240/240/ki3gknk0/helmet/p/4/9/sba-1-cesar-sba-1-cesar-full-face-steelbird-original-imafxyhzwrhqyvcx.jpeg?q=60",
+        name:"Helmet",
+        price:"From ₹699"
+      },
+      {
+        Image:"https://rukminim2.flixcart.com/image/240/240/kfbfr0w0/arm-sleeve/p/x/3/free-arm-gy-auto-hub-original-imafvsutr6gkvsuf.jpeg?q=60",
+        name:"Riding Gol",
+        price:"up to 70% off"
+      },
+      {
+        Image:"https://rukminim2.flixcart.com/image/240/240/kmds4nk0/vehicle-indicator-light/c/g/9/set-of-4-bike-front-side-rear-smd-blue-led-light-indicator-turn-original-imagfatnzgzegkmg.jpeg?q=60",
+        name:"Bike light bulb",
+        price:"From ₹89"
+      },
+      {
+        Image:"https://rukminim2.flixcart.com/image/240/240/kw104nk0/vehicle-light-bulb/z/x/m/12-h7-geniune-9000lm-6500k-72-w-led-automotive-headlight-bulbs-original-imag8sqneb7etpg6.jpeg?q=60",
+        name:"Car Light Bulb",
+        price:"up to 70% off"
+
+      },
+      {
+        Image:"https://rukminim2.flixcart.com/image/240/240/jy4q3680/car-sticker/j/z/q/1-m-carfullsideimage-marvellous-original-imafgfv4ffpdw2wz.jpeg?q=60",
+        name:"Car sticker",
+        price:"up to 70% off"
+      },
+      {
+      Image:"https://rukminim2.flixcart.com/image/240/240/l3ahpjk0/air-freshener/b/b/k/10-godreg-aer-frshner-gel-skynex-original-imagegfwhgxpukvj.jpeg?q=60",
+      name:"Car Air Freshner",
+      price:"from ₹199"
+      },
+{
+       Image:"https://rukminim2.flixcart.com/image/240/240/jamtevk0/two-wheeler-cover/v/f/4/fksbyellow-apache-rtr-160-flipkart-smartbuy-original-imafy658ggts6rwr.jpeg?q=60",
+      name:"Bike Body Cover",
+      price:"From ₹199"
+}
+    ]
+
+       pen.map((el,i)=>{
+        let div = document.createElement("div")
+        // div.style.marginTop = "10px"
+    
+    
+        let image = document.createElement("img")
+        image.src = el.Image
+        // image.style.marginTop = "15px"
+        image.style.width = "100%"
+        image.style.height = "auto"
+         image.style.padding = "20px"
+         image.style.marginTop = "20px"
+        
+       
+    
+        
+        
+        let name = document.createElement("p")
+        name.innerText = el.name
+        name.style.marginTop = "10px"
+
+         let price = document.createElement("b")
+        price.innerText = el.price
+              
+        div .append(image,name,price)
+        document.querySelector("#pen-1").append(div)
+    
+      })
+
+
+   let set =[{
+        Image:"https://rukminim1.flixcart.com/image/240/240/xif0q/torch/a/y/1/3-1-3-mode-flashlight-2000mah-li-ion-battery-400-lm-ip44-type-c-original-imah4bzxj728tysk.jpeg?q=60",
+        name:"Torcher",
+        price:"From ₹199"
+      },
+      {
+        Image:"https://rukminim1.flixcart.com/image/240/240/xif0q/bottle/l/l/a/2000-leakproof-unbreabale-bpa-free-travel-gym-big-water-bottle-original-imagvy3zeybfrnse.jpeg?q=60",
+        name:"Bottle and flasks",
+        price:"form ₹129"
+      },
+      {
+        Image:"https://rukminim1.flixcart.com/image/240/240/xif0q/plant-sapling/l/e/z/no-perennial-yes-pp99-naughty-nysa-s-ngf-bare-xs-wht-small-1-pot-original-imahg2hq5hctxwfk.jpeg?q=60",
+        name:"Indoor Plants",
+        price:"min 50% off"
+      },
+      {
+        Image:"https://rukminim1.flixcart.com/image/240/240/xif0q/electric-insect-killer/r/3/h/-original-imahykuuyx6r4z6f.jpeg?q=60",
+        name:"Mosquto Bats & Lam",
+        price:" From ₹179"
+
+      },
+      {
+        Image:"https://rukminim1.flixcart.com/image/240/240/kri3xjk0/pressure-cooker/w/w/s/yes-14751-pigeon-original-imag5ay5g8wswdf5.jpeg?q=60",
+        name:"Pressure Cookers",
+        price:"From ₹499"
+      },
+      {
+      Image:"https://rukminim1.flixcart.com/image/240/240/xif0q/dinner-set/0/l/l/no-40-emerald-bloom-melamine-dinner-set-dishwasher-safe-stain-original-imagweh894qnhjgx.jpeg?q=60",
+      name:"Dinner Set",
+      price:"From ₹499"
+      },
+{
+       Image:"https://rukminim1.flixcart.com/image/240/240/kg9qbgw0/mosquito-net/8/e/h/polyester-adults-pop-up-foldable-double-bed-king-size-mosquito-original-imafwjf9gwdzfw8n.jpeg?q=60",
+      name:"Mosquito Nets",
+      price:"From ₹249"
+}
+    ]
+
+       set.map((el,i)=>{
+        let div = document.createElement("div")
+        // div.style.marginTop = "10px"
+    
+    
+        let image = document.createElement("img")
+        image.src = el.Image
+        // image.style.marginTop = "15px"
+        image.style.width = "100%"
+        image.style.height = "auto"
+         image.style.padding = "20px"
+         image.style.marginTop = "20px"
+        
+       
+    
+        
+        
+        let name = document.createElement("p")
+        name.innerText = el.name
+        name.style.marginTop = "10px"
+
+         let price = document.createElement("b")
+        price.innerText = el.price
+              
+        div .append(image,name,price)
+        document.querySelector("#set-1").append(div)
+    
+      })
+
+
+       let pet =[{
+        Image:"https://rukminim1.flixcart.com/image/240/240/xif0q/shoe-rack/j/4/5/32-85-0-2-plasticblack-shoe-rack-with-cover-plastic-double-5-original-imahezaa5fx2gram.jpeg?q=60",
+        name:"Shoes Rocks",
+        price:"From ₹249"
+      },
+      {
+        Image:"https://rukminim1.flixcart.com/image/240/240/xif0q/sofa-set/e/x/h/74-74-peach-polyester-3-2-30-188-81-60-30-81-sofa-set-sydney-3-2-original-imahdwnzufzwghbz.jpeg?q=60",
+        name:"Sofas",
+        price:"From 5,299"
+      },
+      {
+        Image:"https://rukminim1.flixcart.com/image/240/240/kg6vfrk0/portable-laptop-table/b/t/a/plywood-multifunction-easy-portable-and-foldable-study-table-for-original-imafwhhug8zzbgaw.jpeg?q=60",
+        name:"Portable laptop table ",
+        price:"From ₹399"
+      },
+      {
+        Image:"https://rukminim1.flixcart.com/image/240/240/xif0q/coffee-table/m/l/m/88-9-rosewood-sheesham-88-9-40-ph01-flipkart-perfect-homes-45-72-original-imahatpfrrnnphvj.jpeg?q=60",
+        name:"Coffee Tables",
+        price:" From ₹1999"
+
+      },
+      {
+        Image:"https://rukminim1.flixcart.com/image/240/240/l3929ow0/tv-entertainment-unit/m/3/w/25-00-130-00-particle-board-18-ak-laura-wnt-wt-anikaa-112-00-43-original-imageet2xjgufrjz.jpeg?q=60",
+        name:"Tv units",
+        price:"from ₹1999"
+      },
+      {
+      Image:"https://rukminim1.flixcart.com/image/240/240/xif0q/home-temple/l/z/4/sm-pu3-spree-ltw-sivom-original-imagtfej7t2zj829.jpeg?q=60",
+      name:"Home Temple",
+      price:"from ₹299"
+      },
+{
+       Image:"https://rukminim1.flixcart.com/image/240/240/xif0q/office-study-chair/u/r/h/-original-imahazwfc3yvxfg3.jpeg?q=60",
+      name:"Chairs",
+      price:"From ₹2990 "
+}
+    ]
+
+       pet.map((el,i)=>{
+        let div = document.createElement("div")
+        // div.style.marginTop = "10px"
+    
+    
+        let image = document.createElement("img")
+        image.src = el.Image
+        // image.style.marginTop = "15px"
+        image.style.width = "100%"
+        image.style.height = "auto"
+         image.style.padding = "20px"
+         image.style.marginTop = "20px"
+        
+        
+        let name = document.createElement("p")
+        name.innerText = el.name
+        name.style.marginTop = "10px"
+
+         let price = document.createElement("b")
+        price.innerText = el.price
+              
+        div .append(image,name,price)
+        document.querySelector("#pet-1").append(div)
+    
+      })
+
+
+        function refreshPage() {
+    location.reload();
+  }
+  
+             </script>
+  </body>
+</html>
